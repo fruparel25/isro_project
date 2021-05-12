@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.68/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.68/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <title>3D Visualization</title>
+    <style>
+        .suggest-artist__link:hover {
+  background-color: rgb(64, 115, 131);
+}
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <form action="/analyze">
+        <input class="suggest-artist__link" style="border:solid 4px rgba(0,0,0,0.8); text-align:center; display:block; font-size:18px; text-decoration:none; font-family:'SlateStd-Bk', 'Lucida Grande', 'Lucida Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; padding:10px 600px 10px;" type="submit" value="Analyzation" >
+    </form>
+    <div id="cesiumContainer" style="width: 100%; height:100%"></div>
+    <script type="module" src="/loadCesium.js"></script>
+    <label id="height" hidden><%= heightAttr %></label>
+</body>
+</html>

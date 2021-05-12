@@ -1,0 +1,24 @@
+{
+  "name": "solar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cesium": "^1.78.0",
+    "compression": "^1.7.4",
+    "csv-parse": "^4.15.3",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-session": "^1.17.1",
+    "node-csv": "^0.1.2",
+    "node-localstorage": "^2.1.6",
+    "sessionstorage": "^0.1.0"
+  }
+}

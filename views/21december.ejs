@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <title>Analyzation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            background-color: rgb(255, 255, 255); 
+            font-size:0.5cm; 
+        }
+        .suggest-artist__link:hover {
+  background-color: rgb(64, 115, 131);
+}
+        .dropbtn {
+          background-color: #1e4855;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #c4d5db}
+        * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+    </style>
+</head>
+<body>
+  <h1 >Select time For December 21:
+    <div class="dropdown">
+        <button class="dropbtn" style="text-align:center; font-size:20px;">Date</button>
+        <div class="dropdown-content" >
+          <a href="/d_sr"style="text-align:center; font-size:14px;">Sunrise</a>
+          <a href="/d_6" style="text-align:center; font-size:14px;">6:00AM</a>
+          <a href="/d_7"style="text-align:center; font-size:14px;">7:00AM</a>
+          <a href="/d_8"style="text-align:center; font-size:14px;">8:00AM</a>
+          <a href="/d_9"style="text-align:center; font-size:14px;">9:00AM</a>
+          <a href="/d_10"style="text-align:center; font-size:14px;">10:00AM</a>
+          <a href="/d_11"style="text-align:center; font-size:14px;">11:00AM</a>
+          <a href="/d_12"style="text-align:center; font-size:14px;">12:00PM</a>
+          <a href="/d_13"style="text-align:center; font-size:14px;">1:00PM</a>
+          <a href="/d_14"style="text-align:center; font-size:14px;">2:00PM</a>
+          <a href="/d_15"style="text-align:center; font-size:14px;">3:00PM</a>
+          <a href="/d_16"style="text-align:center; font-size:14px;">4:00PM</a>
+          <a href="/d_17"style="text-align:center; font-size:14px;">5:00PM</a>
+          <a href="/d_18"style="text-align:center; font-size:14px;">6:00PM</a>
+          <a href="/d_ss"style="text-align:center; font-size:14px;">Sunset</a>
+        </div>
+      </div></h1>
+      <br/>
+    <div class="container">
+      <div class="table-responsive">
+        <h1 style="background-color:rgb(213, 217, 218); text-align:center"><u>Energy And Shadow_free_area </u></h1>
+        <br/>
+        <table class="table table-bordered table-striped" id="temp_table">
+          <tr>
+            <th>ObjectId</th>
+            <th>Shape Length</th>
+            <th>Shape Area</th>
+            <th>MEAN</th>
+            <th>Total Energy</th>
+            <th>Shadow Free Area</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+</body>
+</html>
+<script>
+  $(document).ready(function(){
+    $.getJSON("/december_21_calc.json",function(data){
+      var temp_data='';
+      $.each(data,function(key,value){
+        temp_data+='<tr>';
+        temp_data+='<td>'+value.OBJECTID+'</td>';
+        temp_data+='<td>'+value.SHAPE_Leng+'</td>';
+        temp_data+='<td>'+value.SHAPE_Area+'</td>';
+        temp_data+='<td>'+value.MEAN+'</td>';
+        temp_data+='<td>'+value.energy_total+'</td>';
+        temp_data+='<td>'+value.shadow_final+'</td>';
+        temp_data+='</tr>';
+      });
+      $('#temp_table').append(temp_data);
+    });
+  });
+</script>

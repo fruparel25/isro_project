@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <title>Analyzation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <style>
+        body{
+            display: grid;
+            background-color: rgb(255, 255, 255); 
+            font-size:1.5cm; 
+        }
+        .suggest-artist__link:hover {
+  background-color: rgb(64, 115, 131);
+}
+    </style>
+    
+</head>
+<body>
+    <h1 style="font-size:40px;background-color:rgb(213, 217, 218); text-align:center" >March21_3:00PM</h1>
+    <table style="border:1px solid black;">
+        <tr></tr>
+        <tr>
+            <td><button class="btn btn-info btn-lg"style=" margin-left:100px;float:left;" onclick="myFunction1()">Altitude</button></td>
+            <td><p style="font-size:30px; margin-left:100px;float:left;"id="demo1"></p></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-info btn-lg"style=" margin-left:100px;float:left;" onclick="myFunction2()"> Azimuth</button></td>
+            <td><p style="font-size:30px; margin-left:100px;float:left;"id="demo2"></p></td>
+        </tr>
+        <tr>
+           <td><p><button class="btn btn-info btn-lg"style=" margin-left:100px;float:left;" onclick="myFunction3()">Shadow_Image </button></p></td> 
+            <td><p><img id="demo3" src="march/shadow_15.jpg" style="height:250px; margin-left:100px; visibility:hidden; "/></p></td>
+        </tr>
+</table>
+
+</body>
+<div class="container">
+    <div class="table-responsive">
+      <h1 style="background-color:rgb(213, 217, 218); text-align:center"><u>Energy And Shadow_free_area </u></h1>
+      <table class="table table-bordered table-striped" id="temp_table">
+        <tr>
+          <th>ObjectId</th>
+          <th>Shape Length</th>
+          <th>Shape Area</th>
+          <th>MEAN</th>
+          <th>Sunlight Percent(%)</th>
+          <th>Energy(KW)</th>
+          <th>Shadow Free Area</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+$(document).ready(function(){
+  $.getJSON("/march_21_calc.json",function(data){
+    var temp_data='';
+    $.each(data,function(key,value){
+      temp_data+='<tr>';
+      temp_data+='<td>'+value.OBJECTID+'</td>';
+      temp_data+='<td>'+value.SHAPE_Leng+'</td>';
+      temp_data+='<td>'+value.SHAPE_Area+'</td>';
+      temp_data+='<td>'+value.MEAN+'</td>';
+      temp_data+='<td>'+value.sunlight_percent_15+'</td>';
+      temp_data+='<td>'+value.energy_15+'</td>';
+      temp_data+='<td>'+value.shadow_free_area_15+'</td>';
+      temp_data+='</tr>';
+    });
+    $('#temp_table').append(temp_data);
+  });
+});
+</script>
+    <script>
+    function myFunction1() {
+      document.getElementById("demo1").innerHTML = "Altitude=50.624";
+    }
+    function myFunction2() {
+      document.getElementById("demo2").innerHTML="Azimuth=239.7859";
+    }
+    function myFunction3() {
+        document.getElementById('demo3').style.visibility="visible";
+    }
+    </script>
+</body>
+</html>
