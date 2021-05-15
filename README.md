@@ -14,3 +14,7 @@ For them who wants to install solar panels on their buildings without having pri
 
 This model can help professionals of diverse fields evaluating the solar energy potential of their projects, even without having a deep knowledge of the physics behind it, nor advanced programming skills.
 
+# Uploading City JSON file:
+
+![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/68156061/118351088-77c3fa00-b577-11eb-80d1-49af8b209193.gif)
+
