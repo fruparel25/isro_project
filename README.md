@@ -19,6 +19,8 @@ This model can help professionals of diverse fields evaluating the solar energy 
 ![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/68156061/118351088-77c3fa00-b577-11eb-80d1-49af8b209193.gif)
 
 # 3D visualization with various attributes:
+![image](https://user-images.githubusercontent.com/68156061/118352351-a09bbd80-b57e-11eb-96ec-dc9e8089953d.png)
+
 
 ![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/68156061/118351481-ee61f700-b579-11eb-8fdf-a8f1d3816898.gif)
 
