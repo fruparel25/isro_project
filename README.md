@@ -26,7 +26,10 @@ This model can help professionals of diverse fields evaluating the solar energy 
 
 ![image](https://user-images.githubusercontent.com/68156061/118351505-0b96c580-b57a-11eb-8756-ae0e2eb14ba4.png)
 
-# Analyzation using Pyranometer data grom VEDAS:
+# Analyzation using Pyranometer data from VEDAS:
+![image](https://user-images.githubusercontent.com/68156061/118352088-29195e80-b57d-11eb-8d5f-1c4a9ad83ede.png)
+
 
 ![ezgif com-gif-maker (10)](https://user-images.githubusercontent.com/68156061/118352062-fb341a00-b57c-11eb-99bb-1fd499d174c9.gif)
+
 
