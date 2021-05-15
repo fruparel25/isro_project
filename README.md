@@ -22,6 +22,6 @@ This model can help professionals of diverse fields evaluating the solar energy 
 
 ![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/68156061/118351481-ee61f700-b579-11eb-8fdf-a8f1d3816898.gif)
 
-ALl the 4 views are as shown as under:
+
 
 ![image](https://user-images.githubusercontent.com/68156061/118351505-0b96c580-b57a-11eb-8756-ae0e2eb14ba4.png)
