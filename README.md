@@ -14,12 +14,14 @@ For them who wants to install solar panels on their buildings without having pri
 
 This model can help professionals of diverse fields evaluating the solar energy potential of their projects, even without having a deep knowledge of the physics behind it, nor advanced programming skills.
 
+# FLow of the Project:
+![image](https://user-images.githubusercontent.com/68156061/118352441-1142da00-b57f-11eb-8417-bb66c4868b25.png)
+
 # Uploading City JSON file:
 
 ![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/68156061/118351088-77c3fa00-b577-11eb-80d1-49af8b209193.gif)
 
 # 3D visualization with various attributes:
-![image](https://user-images.githubusercontent.com/68156061/118352384-c88b2100-b57e-11eb-9f9d-8dc1998cbbf4.png)
 
 
 
