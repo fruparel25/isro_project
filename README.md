@@ -1,4 +1,4 @@
-# isro project :3D Visulaization & Analyzation of Solar potential
+# ISRO project :3D Visulaization & Analyzation of Solar potential
 
 # project overview:
 To review currently available 3D City Model generating applications and finding solar potential area.
